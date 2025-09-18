@@ -43,7 +43,7 @@ use yii\helpers\Url;
 ?>
 
 <?= Yii2Cam::widget([
-    'uploadUrl' => Url::to(['site/upload-kamera']),
+    'uploadUrl' => Url::to(['site/upload-image']),
     'onSuccess' => 'handleSuccess',
     'onError' => 'handleError',
     'buttonText' => 'Ambil Foto',
