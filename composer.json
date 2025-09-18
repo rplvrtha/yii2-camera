@@ -1,0 +1,24 @@
+{
+    "name": "rplvrtha/yii2-camera",
+    "version": "v0.25.09-dev",
+    "description": "A simple camera extension for Yii2 that uses the built-in camera on your phone.",
+    "type": "yii2-extension",
+    "keywords": ["yii2", "camera", "widget", "file", "upload"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "rplvrtha",
+            "email": "radityaloviartha@email.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "yiisoft/yii2": "^2.0.42"
+    },
+    "autoload": {
+        "psr-4": {
+            "rplvrtha\\camera\\assets\\": "assets/",
+            "rplvrtha\\camera\\": "src/"
+        }
+    }
+}
