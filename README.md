@@ -49,7 +49,7 @@ use yii\helpers\Url;
     'buttonText' => 'Ambil Foto',
 ]); ?>
 
-<script>
+$this->registerJs(<<<JS
     // Fungsi callback yang dipanggil saat unggah berhasil
     function handleSuccess(response) {
         console.log('Gambar berhasil diunggah:', response);
@@ -65,7 +65,7 @@ use yii\helpers\Url;
         console.error('Error:', error);
         alert('Terjadi kesalahan saat mengunggah gambar.');
     }
-</script>
+JS);
 ```
 
 ### 2. Buat action di controller untuk menangani unggahan file
