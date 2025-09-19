@@ -37,8 +37,8 @@ class Yii2Cam extends Widget
             'div',
             Html::img('', [
                 'id' => 'previewImage',
-                'class' => 'img-fluid d-block mb-3 ' . $this->previewClass,
-                'style' => 'display: none; width: ' . $this->previewWidth . ';',
+                'class' => "img-fluid mb-3 $this->previewClass",
+                'style' => "width: $this->previewWidth; display: none;",
                 'alt' => 'Pratinjau Gambar'
             ]) .
                 Html::button($this->buttonText, [
