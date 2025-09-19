@@ -40,14 +40,12 @@ composer require rplvrtha/yii2-camera "dev-master"
 use rplvrtha\camera\Yii2Cam;
 use yii\helpers\Url;
 
-?>
-
-<?= Yii2Cam::widget([
+echo Yii2Cam::widget([
     'uploadUrl' => Url::to(['site/upload-image']),
     'onSuccess' => 'handleSuccess',
     'onError' => 'handleError',
     'buttonText' => 'Ambil Foto',
-]); ?>
+]);
 
 $this->registerJs(<<<JS
     // Fungsi callback yang dipanggil saat unggah berhasil
